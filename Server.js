@@ -60,7 +60,7 @@ app.get("/api/fixtures", async (req, res) => {
         away: m.teams.away.name
       }))
     );
-
+ 
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
